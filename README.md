@@ -66,25 +66,25 @@ Command may disrupt existing ssh connections. Proceed with operation (y|n)?
 But, since we have already added it ssh to the rules, this will not happen. So just press (y).
 
 ## Добавляем необходимые порты командой:
+> Add the necessary ports with the command:
 ```
 sudo ufw allow <port>
  # <port> меняем на нужный номер порта (22) или диапазон портов ( 3000:4000 ). Так же можно использовать IP
 ```
-## Ограничение подключений
+## Ограничение подключений / Limiting connections
 ```
 sudo ufw deny <port>
  # <port> меняем на нужный номер порта (22) или диапазон портов ( 3000:4000 )& Так же можно использовать IP
 ```
-##Отключение UFW
+## Отключение UFW / Disable UFW
 
 Отключить UFW можно при помощи команды:
-
 ```
 sudo ufw disable
 ```
 В результате ее выполнения все созданные ранее правила утратят силу.
 
-## Сброс правил
+## Сброс правил / Reset rules
 Если вам требуется сбросить текущие настройки, воспользуйтесь командой:
 ```
 sudo ufw reset
