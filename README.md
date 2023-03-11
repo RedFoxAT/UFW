@@ -26,18 +26,20 @@ Status: inactive
 > ***Caution!*** Make the initial setting before turning on UFW. In particular, SSH (port 22) should be available. Otherwise, you risk losing access to the server.
 
 
-## Начальная настройка
+## Начальная настройка / Start setting
 
 По умолчанию UFW настройки запрещают все входящие соединения и разрешают все исходящие. Это значит, что если кто-то попытается  подключиться к вашему серверу, он не сможет этого сделать, в то время как любое приложение на сервере имеет доступ к внешним соединениям.
+> By default, UFW settings prohibit all incoming connections and allow all outgoing connections. This means that if someone tries to connect to your server, they will not be able to do this, while any application on the server has access to external connections.
 
-## Cоответствующие правила фаервола прописываются так:
+## Правила фаервола прописываются так / The rules of the firewall are prescribed as follows:
 ```
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-## Добавление правила для SSH-соединений
+## Добавление правила для SSH-соединений / Adding a Rule for SSH Connections
  Чтобы разрешить входящие SSH-соединения, выполните команду:
+ > To allow incoming SSH connections, run the command:
 ```
 sudo ufw allow ssh
 ```
