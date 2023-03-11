@@ -6,22 +6,25 @@
 
 ## Требования / Requirements:
 
-1. Возможность исполнения команд под sudo (Суперпользователь) / Ability to execute commands under sudo (Superuser).  
+1. Возможность исполнения команд под sudo (Суперпользователь) 
+ > Ability to execute commands under sudo (Superuser).  
 2. Утилита  UFW предустановлена в системе. Если по какой-то причине она была отсутствует, вы можете установить ее  с помощью команды:
  > The UFW utility is preinstalled on the system. If for some reason it was missing, you can install it using the command:
 ```
 sudo apt-get install ufw
 ```
-## Проверка правил и текущего состояния UFW
+## Проверка правил и текущего состояния UFW / Checking Rules and Current Status
 ```
 sudo ufw status verbose
 ```
 По умолчанию UFW отключен, так что вы должны увидеть что-то вроде этого:
+> By default, UFW is disabled, so you should see something like this:
 ```
 Status: inactive
 ```
-
 ***Внимание!*** Проведите начальную настройку перед включением UFW. В частности, должен быть доступен SSH(22 порт). В ином случае вы рискуете потерять доступ к серверу.
+> * * * Caution * * * Make the initial setting before turning on UFW. In particular, SSH (port 22) should be available. Otherwise, you risk losing access to the server.
+
 
 ## Начальная настройка
 
