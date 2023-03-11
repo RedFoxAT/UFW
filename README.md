@@ -1,13 +1,14 @@
-## Если Ваш сервер (нода) в мир смотрит без включенного фаервола то это лишь вопрос времени когда его ломанут!<br>
+## Если Ваш сервер (нода) в мир смотрит без включенного фаервола то это лишь вопрос времени когда его хакнут!<br>
 > If your server (noda) looks into the world without a firewall turned on, it is only a matter of time before it is broken!
 
 Одной из первых мер по снижению рисков безопасности является грамотная настройка правил межсетевого экрана. Здесь даны основные команды и правила работы с утилитой UFW.
 > One of the first measures to mitigate security risks is to properly configure firewall rules. Here are the basic commands and rules for working with the UFW utility.
 
-## Предварительные требования:
+## Требования / Requirements:
 
-1. Для начала работы с UFW вам потребуется суперпользователь( возможность исполнения команд под sudo).  
+1. Возможность исполнения команд под sudo (Суперпользователь) / Ability to execute commands under sudo (Superuser).  
 2. Утилита  UFW предустановлена в системе. Если по какой-то причине она была отсутствует, вы можете установить ее  с помощью команды:
+ > The UFW utility is preinstalled on the system. If for some reason it was missing, you can install it using the command:
 ```
 sudo apt-get install ufw
 ```
