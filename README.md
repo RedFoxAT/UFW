@@ -44,21 +44,26 @@ sudo ufw default allow outgoing
 sudo ufw allow ssh
 ```
 SSH (22 порт) UFW знает наименования распространенных служб (ssh, sftp, http, https), поэтому вы можете использовать их вместо номера порта.
-
 Теперь, когда ваш межсетевой экран настроен, можете включать его.
+> SSH (port 22) UFW knows the names of common services (ssh, sftp, http, https), so you can use them instead of the port number.
+Now that your firewall is configured, you can turn it on.
 
-## Запуск UFW
+## Запуск UFW / Start UFW
 
 Чтобы включить UFW, используйте следующую команду:
+> To enable UFW, use the following command:
 ```
 sudo ufw enable
 ```
-Вы получите похожее  предупреждение:
+Вы получите предупреждение:
+> You will receive a warning:
 ```
 Command may disrupt existing ssh connections. Proceed with operation (y|n)? 
 ```
 Это означает, что запуск этого сервиса может разорвать текущее ssh соединение.
 Но, так как мы его уже добавили ssh в правила, этого не произойдет. Поэтому просто нажмите (y).
+> This means that starting this service can break the current ssh connection.
+But, since we have already added it ssh to the rules, this will not happen. So just press (y).
 
 ## Добавляем необходимые порты командой:
 ```
