@@ -23,7 +23,7 @@ sudo ufw status verbose
 Status: inactive
 ```
 ***Внимание!*** Проведите начальную настройку перед включением UFW. В частности, должен быть доступен SSH(22 порт). В ином случае вы рискуете потерять доступ к серверу.
-> * * * Caution * * * Make the initial setting before turning on UFW. In particular, SSH (port 22) should be available. Otherwise, you risk losing access to the server.
+> ***Caution!*** Make the initial setting before turning on UFW. In particular, SSH (port 22) should be available. Otherwise, you risk losing access to the server.
 
 
 ## Начальная настройка
